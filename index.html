@@ -1,0 +1,147 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Netflix</title>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="netflixLogo pb-3">
+        <a id="logo" href="#home"><img src="static/logo.png" alt="Logo Image"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#home">Home</a>
+        <a href="#tvShows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#originals">Originals</a>
+        <a href="#">Recently Added</a>
+      </nav>
+      <nav class="sub-nav">
+        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+        <a href="#">Account</a>        
+      </nav>      
+    </header>
+    <!-- END OF HEADER -->
+    
+    <div class="container-fluid top-grad">
+      <div class="row image">
+        <div class="col-4 my-auto mx-auto">
+          <img class="title" src="nnc.png">
+        </div>
+        <div class="col-8">
+          <img class="wallpaper" src="static/base.jpeg">
+        </div>
+      </div>
+    </div>
+    <!-- MAIN CONTAINER -->
+    <section class="main-container">
+      <div class="location" id="home">
+        <h4 class="font-weight-bold my-3" id="home">Popular on Netflix</h4>
+        <div class="box">
+          <a href="" data-toggle="modal" data-target="#f1"><img src="https://api.lorem.space/image/book?hash=vfdb88xr" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#f2"><img src="https://api.lorem.space/image/book?hash=vfdb88xr" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#f3"><img src="https://api.lorem.space/image/book?hash=vfdb88xr" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#f4"><img src="https://api.lorem.space/image/book?hash=vfdb88xr" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#f5"><img src="https://api.lorem.space/image/book?hash=vfdb88xr" alt=""></a>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="f1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg d-block" role="document">
+          <div class="modal-content" style="background-color: #181818;">
+            <div id="carouself1" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 image" src="static/img.png" alt="First slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouself1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouself1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+            <div class="container pl-5 my-3">
+              <div class="row">
+                <div class="col col-8">
+                  <span class="match">96% Match&nbsp;&nbsp;</span><span>2019</span>
+                </div>
+                <div class="col col-4">
+                  <span><span class="dark">Cast:&nbsp;</span>Friend 1</span>
+                </div>
+              </div>
+              <div class="row py-3">
+                <div class="col col-8">
+                  <span>Description , add your data</span>
+                </div>
+                <div class="col col-4">
+                  <span><span class="dark">Genres:&nbsp;</span>misc</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF MAIN CONTAINER -->
+
+    <!-- LINKS -->
+    <section class="link">
+      <div class="container">
+        <div class="logos py-4">
+          <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+        </div>
+        <div class="sub-links mx-auto">
+          <ul>
+            <li><a href="#"><small>Audio and Subtitles</small></a></li>
+            <li><a href="#"><small>Audio Description</small></a></li>
+            <li><a href="#"><small>Help Center</small></a></li>
+            <li><a href="#"><small>Gift Cards</small></a></li>
+            <li><a href="#"><small>Media Center</small></a></li>
+            <li><a href="#"><small>Investor Relations</small></a></li>
+            <li><a href="#"><small>Jobs</small></a></li>
+            <li><a href="#"><small>Terms of Use</small></a></li>
+            <li><a href="#"><small>Privacy</small></a></li>
+            <li><a href="#"><small>Legal Notices</small></a></li>
+            <li><a href="#"><small>Corporate Information</small></a></li>
+            <li><a href="#"><small>Contact Us</small></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END OF LINKS -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <small>&copy 1997-2020 Netflix, Inc.&nbsp;<span>{i-00a24711aacc4a5af}</span></small>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
